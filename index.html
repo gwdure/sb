@@ -9,7 +9,7 @@
 :root{--ink:#2a221c;--r:#b8322a;--o:#d9641e;--g:#3f5236;--bg:#fbf5ee;--mut:#7a6e64}
 body{font-family:Pretendard,-apple-system,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;background:var(--bg);color:var(--ink);font-size:17px;line-height:1.55;word-break:keep-all;padding-bottom:96px}
 main{max-width:480px;margin:0 auto}
-.pop{position:relative;height:min(100vw,480px);overflow:hidden;background:#2b1d16;color:#fff}
+.pop{position:relative;height:min(118vw,566px);overflow:hidden;background:#2b1d16;color:#fff}
 .pop img{position:absolute;top:0;width:50%;height:66%;object-fit:cover}
 .pop .a{left:0}.pop .b{left:50%}
 .pv{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;text-align:center;padding:0 16px 22px;background:linear-gradient(180deg,rgba(30,18,12,.05) 0%,rgba(30,18,12,.45) 38%,rgba(30,18,12,.9) 100%)}
@@ -23,34 +23,47 @@ main{max-width:480px;margin:0 auto}
 .hot{background:#fff3ec;border-top:4px solid var(--r)}.dday{display:inline-block;background:var(--r);color:#fff;border-radius:10px;padding:1px 10px;font-size:.9em}.hot .hd{font-size:19px;color:var(--r)}
 .dd small{display:block;font-size:15.5px;font-weight:800;opacity:.9}
 .dd b{font-size:25px;font-weight:900;letter-spacing:-.03em}
-section{padding:16px 12px 2px}
+section{padding:22px 14px 4px}
 h2{font-size:24px;font-weight:900;letter-spacing:-.03em}
 h2+p{color:var(--mut);margin-top:2px}
-.big{list-style:none;display:grid;gap:10px;margin-top:10px}
-.big>li{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 3px 12px rgba(60,30,10,.08);display:grid;grid-template-columns:118px 1fr}
-.big .ph{position:relative;background:#f1e7dc;min-height:118px}
-.big .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
-.tea .ph{background:#fff}.tea .ph img{object-fit:contain}
-.big .rb{position:absolute;left:6px;top:6px;background:var(--r);color:#fff;font-weight:900;font-size:13px;border-radius:8px;padding:1px 7px}
-.big .tx{padding:9px 11px 10px}
-.big .nm{font-size:19px;font-weight:900;letter-spacing:-.03em;line-height:1.25}
-.big .sz{color:var(--mut);font-size:15px}
-.big .pr{display:flex;align-items:baseline;gap:6px;flex-wrap:wrap}
-.big .pr s{color:#9a8f86;font-size:16px}
-.big .pr b{color:var(--r);font-size:25px;font-weight:900;letter-spacing:-.04em}
-.big .pc{position:absolute;right:6px;bottom:6px;background:var(--r);color:#fff;font-style:normal;font-weight:900;font-size:15px;border-radius:8px;padding:0 7px}
-.big .pr i{font-style:normal;background:#fdeae7;color:var(--r);font-weight:900;font-size:14.5px;border-radius:8px;padding:0 6px}
-.big ul.pt{list-style:none;margin-top:2px}
-.big ul.pt li{font-size:16px;line-height:1.4;padding-left:17px;position:relative;letter-spacing:-.02em}
+.big{list-style:none;display:grid;gap:12px;margin-top:12px}
+.big li{background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 3px 14px rgba(60,30,10,.08)}
+.big .ph{position:relative;height:210px;background:#f1e7dc}
+.big .ph img{width:100%;height:100%;object-fit:cover;display:block}
+.big .rb{position:absolute;left:10px;top:10px;background:var(--r);color:#fff;font-weight:900;font-size:16px;border-radius:10px;padding:3px 10px}
+.big .tx{padding:12px 14px 14px}
+.big .nm{font-size:21px;font-weight:900;letter-spacing:-.03em}
+.big .sz{color:var(--mut);font-size:16px}
+.big .pr{margin-top:4px;display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+.big .pr s{color:#9a8f86;font-size:17px}
+.big .pr b{color:var(--r);font-size:30px;font-weight:900;letter-spacing:-.04em}
+.lim{display:inline-block;vertical-align:4px;background:var(--r);color:#fff;font-size:14.5px;font-weight:900;border-radius:8px;padding:2px 8px;margin-left:4px}
+.tea{list-style:none;display:grid;gap:10px;margin-top:10px}
+.tea>li{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 3px 12px rgba(60,30,10,.08);display:grid;grid-template-columns:118px 1fr}
+.tea .ph{position:relative;background:#fff;min-height:118px}
+.tea .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain}
+.tea .rb{position:absolute;left:6px;top:6px;background:var(--r);color:#fff;font-weight:900;font-size:13px;border-radius:8px;padding:1px 7px}
+.tea .pc{position:absolute;right:6px;bottom:6px;background:var(--r);color:#fff;font-style:normal;font-weight:900;font-size:15px;border-radius:8px;padding:0 7px}
+.tea .tx{padding:9px 11px 10px}
+.tea .nm{font-size:19px;font-weight:900;letter-spacing:-.03em;line-height:1.25}
+.tea .sz{color:var(--mut);font-size:15px}
+.tea .pr{display:flex;align-items:baseline;gap:6px;flex-wrap:wrap}
+.tea .pr s{color:#9a8f86;font-size:16px}
+.tea .pr b{color:var(--r);font-size:25px;font-weight:900;letter-spacing:-.04em}
+.tea .ln{font-size:16px;line-height:1.4;letter-spacing:-.02em}.tea .ln:first-letter{color:var(--g)}
+.tea .rv{margin-top:5px;padding:4px 9px;font-size:15.5px;line-height:1.4}
+.big .pr i{font-style:normal;background:#fdeae7;color:var(--r);font-weight:900;font-size:16px;border-radius:8px;padding:1px 7px}
+.big ul.pt{list-style:none;margin-top:8px;display:grid;gap:3px}
+.big ul.pt li{background:none;box-shadow:none;border-radius:0;font-size:16.5px;padding-left:20px;position:relative}
 .big ul.pt li:before{content:"✔";position:absolute;left:0;color:var(--g);font-weight:900}
-.rv{margin-top:5px;background:#fbf5ee;border-radius:10px;padding:4px 9px;font-size:15.5px;line-height:1.4;color:#5b4f45;letter-spacing:-.02em}
-.rv b{color:var(--o)}.rv small{font-size:13px;color:var(--mut)}
-.grp{margin-top:12px}
+.rv{margin-top:8px;background:#fbf5ee;border-radius:12px;padding:8px 12px;font-size:16px;color:#5b4f45}
+.rv b{color:var(--o)}.rv small{font-size:14px;color:var(--mut)}
+.grp{margin-top:16px}
 .grp h3{font-size:19.5px;font-weight:900}
 .grp h3 small{font-size:15.5px;font-weight:600;color:var(--mut);margin-left:6px}
 .mg{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:8px}
 .mg li{background:#fff;border-radius:14px;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 2px 8px rgba(60,30,10,.06)}
-.mg img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;background:#f1e7dc}
+.mg img{width:100%;aspect-ratio:1;object-fit:cover;display:block;background:#f1e7dc}
 .mg b{font-size:15px;font-weight:800;line-height:1.3;padding:6px 7px 0;letter-spacing:-.03em}
 .mg span{font-size:13.5px;color:var(--mut);padding:0 7px}
 .mg em{font-style:normal;margin-top:auto;padding:2px 7px 8px;font-size:17px;font-weight:900;color:var(--ink)}
@@ -82,27 +95,27 @@ h2+p{color:var(--mut);margin-top:2px}
 
 <section><h2>① 샤브샤브나 감자탕 어때요?</h2><p>모두 <b>사전주문</b> 생활재예요. 11/30(월)~12/5(토) 중에 받아 가세요</p>
 <ul class="big">
-<li><div class="ph"><img src="https://dureimg.ecoop.or.kr:9091/Delsys/DLOG/Goods/GoodsMaster/GoodsImage_480;v=20261116/34347C.png" alt="돌돌한우샤브샤브"><span class="rb">사전주문</span><i class="pc">5%↓</i></div><div class="tx"><b class="nm">돌돌한우샤브샤브</b> <span class="sz">300g · 냉동</span><div class="pr"><s>20,500원</s><b>19,500원</b></div><ul class="pt"><li>화천 <b>두레축산 한우</b> 전각·설도·우둔</li><li>얇게 말아 바로 데쳐 먹어요</li></ul><p class="rv"><b>★5.0</b> 생협 한우라 풍미가 뛰어나고 담백해요</p></div></li>
-<li><div class="ph"><img src="https://dureimg.ecoop.or.kr:9091/Delsys/DLOG/Goods/GoodsMaster/GoodsImage_480;v=20261116/467C.png" alt="돼지등뼈(1kg/냉동)"><span class="rb">사전주문</span><i class="pc">21%↓</i></div><div class="tx"><b class="nm">돼지등뼈(1kg/냉동)</b> <span class="sz">1kg · 냉동</span><div class="pr"><s>8,600원</s><b>6,800원</b></div><ul class="pt"><li><b>무항생제</b> · 이천 씨알살림축산</li><li>감자·시래기·들깨로 감자탕</li></ul></div></li>
+<li><div class="ph"><img src="https://dureimg.ecoop.or.kr:9091/Delsys/DLOG/Goods/GoodsMaster/GoodsImage_480;v=20261116/34347C.png" alt="돌돌한우샤브샤브"><span class="rb">사전주문</span></div><div class="tx"><b class="nm">돌돌한우샤브샤브</b> <span class="sz">300g · 냉동</span><div class="pr"><s>20,500원</s><b>19,500원</b><i>5%↓</i></div><ul class="pt"><li>강원 화천 <b>두레축산 한우</b> (국내산)</li><li>전각·설도·우둔, 얇게 돌돌 말아 바로 데쳐요</li><li>구워 먹어도 고소해요</li></ul><p class="rv"><b>★ 5.0</b> “수입 샤브샤브 고기와 먹어보면 역시 생협 한우의 풍미가 뛰어나고 담백해요”</p></div></li>
+<li><div class="ph"><img src="https://dureimg.ecoop.or.kr:9091/Delsys/DLOG/Goods/GoodsMaster/GoodsImage_480;v=20261116/467C.png" alt="돼지등뼈(1kg/냉동)"><span class="rb">사전주문</span></div><div class="tx"><b class="nm">돼지등뼈(1kg/냉동)</b> <span class="sz">1kg · 냉동</span><div class="pr"><s>8,600원</s><b>6,800원</b><i>21%↓</i></div><ul class="pt"><li><b>무항생제</b> 인증 · 경기 이천 씨알살림축산</li><li>감자·시래기·들깨 넣고 푹 끓이면 감자탕 완성</li><li>뼈해장국·등뼈찜으로도 좋아요</li></ul></div></li>
 </ul></section>
 
 <section><h2>② 시원한 다슬기 한 그릇</h2>
 <ul class="big">
-<li><div class="ph"><img src="https://dureimg.ecoop.or.kr:9091/Delsys/DLOG/Goods/GoodsMaster/GoodsImage_480;v=20261116/60025C.png" alt="영월 깐다슬기(350g)"><span class="rb">사전주문</span><i class="pc">10%↓</i></div><div class="tx"><b class="nm">영월 깐다슬기(350g)</b> <span class="sz">350g(육수 포함) · 냉동</span><div class="pr"><s>13,200원</s><b>11,900원</b></div><ul class="pt"><li>영월 <b>국내산</b>, 손질 끝 + 육수까지</li><li>부추·아욱 넣고 다슬기국</li></ul><p class="rv"><b>★4.5</b> 자주 사는 아이템, 너무 좋아요 <small>(춘천두레)</small></p></div></li>
+<li><div class="ph"><img src="https://dureimg.ecoop.or.kr:9091/Delsys/DLOG/Goods/GoodsMaster/GoodsImage_480;v=20261116/60025C.png" alt="영월 깐다슬기(350g)"><span class="rb">사전주문</span></div><div class="tx"><b class="nm">영월 깐다슬기(350g)</b> <span class="sz">350g(육수 포함) · 냉동</span><div class="pr"><s>13,200원</s><b>11,900원</b><i>10%↓</i></div><ul class="pt"><li>강원 영월 <b>국내산 다슬기</b></li><li>손질 끝! 깐 다슬기에 육수까지 들어 있어요</li><li>부추·아욱 넣고 다슬기국, 수제비로도</li></ul><p class="rv"><b>★ 4.5</b> “자주 사는 아이템이예요 너무 좋아요” <small>(춘천두레 조합원)</small></p></div></li>
 </ul></section>
 
 <section><h2>③ 햇 겨울차 3종 <span class="lim">한정수량</span></h2><p>올해 새로 담근 차, 미리 주문하세요</p>
-<ul class="big tea">
-<li><div class="ph"><img src="https://dureimg.ecoop.or.kr:9091/Delsys/DLOG/Goods/GoodsMaster/GoodsImage_480;v=20261116/13984C.jpg" alt="모과차(460g)"><span class="rb">사전주문</span><i class="pc">10%↓</i></div><div class="tx"><b class="nm">모과차(460g)</b> <span class="sz">460g</span><div class="pr"><s>8,000원</s><b>7,200원</b></div><ul class="pt"><li>영동 <b>햇 모과</b> : 유기농 설탕 5:5</li></ul><p class="rv"><b>★4.8</b> 향과 적당한 당도가 좋아요</p></div></li>
-<li><div class="ph"><img src="https://dureimg.ecoop.or.kr:9091/Delsys/DLOG/Goods/GoodsMaster/GoodsImage_480;v=20261116/14040C.jpg" alt="생강차(460g)"><span class="rb">사전주문</span><i class="pc">10%↓</i></div><div class="tx"><b class="nm">생강차(460g)</b> <span class="sz">460g</span><div class="pr"><s>14,900원</s><b>13,400원</b></div><ul class="pt"><li><b>무농약 생강</b> 54% + 유기농 설탕</li></ul><p class="rv"><b>★5.0</b> 맵지 않고 부드러운 맛이에요</p></div></li>
-<li><div class="ph"><img src="https://dureimg.ecoop.or.kr:9091/Delsys/DLOG/Goods/GoodsMaster/GoodsImage_480;v=20261116/26729C.jpg" alt="무농약 유자차(1kg)"><span class="rb">사전주문</span><i class="pc">10%↓</i></div><div class="tx"><b class="nm">무농약 유자차(1kg)</b> <span class="sz">1kg</span><div class="pr"><s>13,000원</s><b>11,700원</b></div><ul class="pt"><li>고흥 <b>무농약 유자</b> 50%</li></ul><p class="rv"><b>★4.6</b> 유자향이 진해서 아이들도 좋아해요</p></div></li>
+<ul class="tea">
+<li><div class="ph"><img src="https://dureimg.ecoop.or.kr:9091/Delsys/DLOG/Goods/GoodsMaster/GoodsImage_480;v=20261116/13984C.jpg" alt="모과차(460g)"><span class="rb">사전주문</span><i class="pc">10%↓</i></div><div class="tx"><b class="nm">모과차(460g)</b> <span class="sz">460g</span><div class="pr"><s>8,000원</s><b>7,200원</b></div><p class="ln">✔ 영동 <b>햇 모과</b> : 유기농 설탕 5:5</p><p class="rv"><b>★4.8</b> 향과 적당한 당도가 좋아요</p></div></li>
+<li><div class="ph"><img src="https://dureimg.ecoop.or.kr:9091/Delsys/DLOG/Goods/GoodsMaster/GoodsImage_480;v=20261116/14040C.jpg" alt="생강차(460g)"><span class="rb">사전주문</span><i class="pc">10%↓</i></div><div class="tx"><b class="nm">생강차(460g)</b> <span class="sz">460g</span><div class="pr"><s>14,900원</s><b>13,400원</b></div><p class="ln">✔ <b>무농약 생강</b> 54% + 유기농 설탕</p><p class="rv"><b>★5.0</b> 맵지 않고 부드러운 맛이에요</p></div></li>
+<li><div class="ph"><img src="https://dureimg.ecoop.or.kr:9091/Delsys/DLOG/Goods/GoodsMaster/GoodsImage_480;v=20261116/26729C.jpg" alt="무농약 유자차(1kg)"><span class="rb">사전주문</span><i class="pc">10%↓</i></div><div class="tx"><b class="nm">무농약 유자차(1kg)</b> <span class="sz">1kg</span><div class="pr"><s>13,000원</s><b>11,700원</b></div><p class="ln">✔ 고흥 <b>무농약 유자</b> 50%</p><p class="rv"><b>★4.6</b> 유자향이 진해서 아이들도 좋아해요</p></div></li>
 </ul>
 </section>
 
 <section class="hot"><h2>④ <span class="dday">D-2</span> 마감 임박!</h2>
 <p class="hd"><b>11/26(목) 주문 마감</b> · 12/1(화)~2(수) 공급</p>
 <ul class="big">
-<li><div class="ph"><img src="https://dureimg.ecoop.or.kr:9091/Delsys/DLOG/Goods/GoodsMaster/GoodsImage_480;v=20261116/16473C.jpg" alt="친환경 생유자(1kg)"><span class="rb">마감임박</span></div><div class="tx"><b class="nm">친환경 생유자(1kg)</b> <span class="sz">1kg · 무농약</span><div class="pr"><b>14,900원</b></div><ul class="pt"><li>고흥 <b>무농약 유자</b></li><li>유자청·유자차 직접 담그실 분께</li></ul></div></li>
+<li><div class="ph"><img src="https://dureimg.ecoop.or.kr:9091/Delsys/DLOG/Goods/GoodsMaster/GoodsImage_480;v=20261116/16473C.jpg" alt="친환경 생유자(1kg)"><span class="rb">마감임박</span></div><div class="tx"><b class="nm">친환경 생유자(1kg)</b> <span class="sz">1kg · 무농약</span><div class="pr"><b>14,900원</b></div><ul class="pt"><li>전남 고흥 <b>무농약 유자</b></li><li>유자청·유자차 직접 담그실 분께</li><li>껍질 채 썰고 설탕과 1:1로 버무려 15일쯤</li></ul></div></li>
 </ul>
 <p class="how">📞 <b>사전주문 방법</b> · 매장 방문 또는 전화(264-6294)·카톡으로 미리 말씀해 주세요.</p>
 </section>
